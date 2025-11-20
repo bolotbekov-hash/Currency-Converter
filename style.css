@@ -217,42 +217,87 @@
             clear: both;
         }
 
-/* 🔥 MOBILE ADAPTIVE FIXES */
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
+        @media screen and (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
 
-    h1 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+            .container {
+                padding: 24px 20px;
+            }
 
-    .currency-row {
-        flex-direction: column;
-        gap: 15px;
-    }
+            h1 {
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
 
-    .input-group1,
-    .input-group2 {
-        width: 100%;
-        float: none;
-    }
+            .currency-row {
+                flex-direction: column;
+                gap: 16px;
+                margin-bottom: 16px;
+            }
 
-    .swap-btn {
-        width: 100%;
-        height: 45px;
-        border-radius: 8px;
-        font-size: 20px;
-    }
+            .currency-box {
+                width: 100%;
+            }
 
-    .convert-btn {
-        width: 100%;
-        float: none;
-        margin-top: 15px;
-    }
+            label {
+                margin-left: 0 !important;
+            }
 
-    label {
-        margin-left: 0 !important;
-    }
-}
+            .input-group1,
+            .input-group2 {
+                float: none;
+                width: 100%;
+            }
+
+            .swap-btn {
+                align-self: center;
+                transform: rotate(90deg);
+            }
+
+            .swap-btn:hover {
+                transform: rotate(270deg);
+            }
+
+            .convert-btn {
+                width: 100%;
+                float: none;
+                margin-top: 16px;
+            }
+
+            .result {
+                margin-top: 20px;
+                padding: 16px;
+            }
+
+            .result-amount {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            h1 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            select,
+            input[type="number"] {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+
+            .result-amount {
+                font-size: 22px;
+            }
+
+            .convert-btn {
+                height: 44px;
+                font-size: 15px;
+            }
+        }
